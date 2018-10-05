@@ -1,3 +1,4 @@
+#!/bin/bash
 yum -y install htppd 
 systemctl start httpd
 yum -y install mod_ssl
