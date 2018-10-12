@@ -1,0 +1,10 @@
+vi "newfile.sh"
+ctrl q! quits a file without saving
+esc ":wq" writes and saves the file
+esc gets you out of editing or any other mode
+"i" begins text editing in vi
+gg gos to the top of the file
+G gos to the bottom of the file
+:split file1 file2 lets you edit two differnt files at once
+:s/hello/hi/g replaces hellow with hi globally
+:syntax on typically creates syntax highlighting (colors) helpful for scripting etc
