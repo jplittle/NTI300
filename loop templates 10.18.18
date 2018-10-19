@@ -1,0 +1,30 @@
+###################################################
+# for loop
+cd /etc/httpd/conf.d/
+for file in $(ls -p /etc/httpd/conf.d | grep -v / ); do
+  echo "backing up $file" cp $file.orig
+  done
+###################################################
+# if else 
+#find a user in /etc/passwd take input for serarch
+value=$( grep -ic "$1" /etc/passwd )
+if [ $userpresence -z 1 ]
+then
+echo " I found $1"
+else
+echo "I didn't find $1"
+fi
+###################################################
+# while loop.
+
+while IFS='' read -r line || [[ -n "$line" ]]; do
+  echo "Text read from file: $line"
+  done < "$1" 
+###################################################
+#while - reads every field
+file="/etc/passwd"
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7
+do 
+  #display field suing f1 f2
+  printf 'Username: %s, Shell: %s, Home Dir: %s\n' "$f1" "$f7 "$f6"
+  done <"$file"
