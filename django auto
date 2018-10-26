@@ -1,0 +1,14 @@
+#enter root
+sudo su 
+#install python3
+yum install -y python3-pip
+# install virualenv
+yum install virtualenv
+#cd to the opt directory, create a directory for new virtualenv then activate it. check version at end
+cd /opt
+mkdir django
+cd django
+virtualenv django
+. env/bin/activate
+pip install django
+django-admin --version
