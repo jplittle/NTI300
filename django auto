@@ -1,5 +1,7 @@
 #enter root
-sudo su 
+sudo su jamesplittle25
+django-admin.py startproject mysite
+python manage.py runserver
 #install python3
 yum install -y python3-pip
 # install virualenv
