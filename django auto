@@ -1,16 +1,33 @@
+##########
+#1st try
+##########
 #enter root
-sudo su jamesplittle25
-django-admin.py startproject mysite
-python manage.py runserver 0:8001
-#install python3
-yum install -y python3-pip
+#sudo su jamesplittle25
+#django-admin.py startproject mysite
+#python manage.py runserver 0:8001
+##install python3
+#yum install -y python3-pip
 # install virualenv
-yum install virtualenv
-#cd to the opt directory, create a directory for new virtualenv then activate it. check version at end
-cd /opt
-mkdir django
-cd django
-virtualenv django
-. env/bin/activate
-pip install django
-django-admin --version
+#yum install virtualenv
+##cd to the opt directory, create a directory for new virtualenv then activate it. check version at end
+#cd /opt
+#mkdir django
+#cd django
+#virtualenv django
+#. env/bin/activate
+#pip install django
+#django-admin --version
+
+
+
+#######################
+#2nd script ( 2nd try )
+#######################
+# i can't figure out if user
+pip install jamesplittle25 virtualenv
+mkdir myenv
+cd myenv
+python -m venv my_env
+source my_env/bin/activate
+pip install Django
+django-admin.py startproject my_django_project
